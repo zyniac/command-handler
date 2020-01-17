@@ -98,6 +98,7 @@ int main(int argc, char** argv)
 
 	while(true)
 	{
+		std::cout << "CMD >> ";
 		std::string line;
 		std::getline(std::cin, line);
 		CommandStatus status = hCmd.executeCommand(line.c_str());
